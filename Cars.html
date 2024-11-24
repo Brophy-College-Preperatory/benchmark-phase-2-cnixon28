@@ -1,49 +1,137 @@
 
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars and Trucks</title>
+    <style>
 
-    body {
-        font-family:'Times New Roman', Times, serif
-    }
-h1 {
-    color:red
-}
-h2 {
 
-    color:blue
+nav ul {
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); 
+    list-style-type:none;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(0, 255, 242);
+    padding: 10px;
+    ;
 }
-        </style>
-       <header>
-        <h1>10 Cars You Should Consider Getting</h1>
-       </header>
-       <main>
-       <h2>1.Dodge Challenger</h2>
-       <p>Muscle Car, Medium price</p>
-       <img src="https://www.autonation.com/~/media/Images/Landingpage%20-%20Car%20Research/2023-dodge-challenger-trim-levels/2023-dodge-challenger-srt-hellcat-redeye-widebody-jailbreak" 
-       alt="cars" height = 30% width = 30%>
-       <h2>2.Cybertruck</h2>
-        <p>Tesla,Safe,Expensive</p>
-       <img src="https://www.usnews.com/object/image/00000190-ebcf-d737-a9d6-ffdfe69f0001/usnpx-2024teslacybertruck-angularfront-zd.jpg?update-time=1721943715451&size=responsive640
-        " alt="cars" height = 30% width = 30%> 
-        <h2>3.Ram Truck</h2>
-        <p>Storage, Tough, Many terrains, expensive</p>
-        <img src="https://www.ramtrucks.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1r9s%25WBXaBKFmfKSLC9gIQALMc6UhVk6GBfM9IW2VRkr72kVwd9pogwXGXQpMTV1rUp3g6OQCckPquBhS1UD2zbTllxA0kOVaNaQFmwplkpd2NfBoMlhIwXAmAC2rl5Se&&pov=fronthero&width=950&height=490&bkgnd=&resp=jpg&x=1800&y=2900&w=6000&h=4030&width=500
-        " alt="cars" height = 30% width = 30%> 
-    </main>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px; 
+            padding: 20px;
+        }
+
+        .section {
+            flex: 1; 
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            color: #444;
+        }
+
+        .section img {
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        iframe {
+            margin-top: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   
+
     <header>
-    <h1>Top 5 Best Looking Luxruy/Sports Cars</h1>
-</header>
+        <h1>Cars and Trucks</h1>
+    </header>
     <main>
-<h2>4.Sting Ray</h2>
-    <img src="https://di-uploads-pod12.dealerinspire.com/stingraychevy/uploads/2019/12/Screen-Shot-2019-12-12-at-12.49.58-PM.png" alt="cars" height = 30% width = 30%> 
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Factors.html">Factors</a></li>
+                <li><a href="Costs.html">Costs</a></li>
+            </ul>
+        </nav>
+        
 
-    <iframe width="916" height="515" src="https://www.youtube.com/embed/g0JmEJ9Wy40" title="The Most FAMOUS CAR BRANDS AND MODELS!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </main>
-    </body>
+
+    <div class="container">
+        <div class="section">
+            <h1>5 Cars/Trucks You Should Consider Getting</h1>
+            
+            <h2>1. Dodge Challenger</h2>
+            <p>The Challenger offers a range of powerful engine options, including V8s that deliver impressive horsepower and torque. This performance appeals to those who enjoy the thrill of driving. Bold Design: Their aggressive, distinctive styling sets them apart from other cars on the road</p>
+            <img src="https://www.autonation.com/~/media/Images/Landingpage%20-%20Car%20Research/2023-dodge-challenger-trim-levels/2023-dodge-challenger-srt-hellcat-widebody-jailbreak" alt="Dodge Challenger">
+
+            <h2>2. Cybertruck</h2>
+            <p>innovative design, electric powertrain, impressive performance, advanced technology, cultural impact, and environmental benefits have made it popular</p>
+            <img src="https://www.usnews.com/object/image/00000190-ebcf-d737-a9d6-ffdfe69f0001/usnpx-2024teslacybertruck-angularfront-zd.jpg" alt="Tesla Cybertruck">
+
+            <h2>3. Ram 3500</h2>
+            <p>A strong heavy duty truck meant to haul as much weight as possible</p>
+            <img src="https://www.ramtrucks.com/mediaserver/iris?COSY-EU-100-1713uLDEMTV1r9s%25WBXaBKFmfKSLC9gIQALMc6UhVk6GBfM9IW2VRkr72kVwd9pogwXGXQpMTV1rUp3g6OQCckPquBhS1UD2zbTllxA0kOVaNaQFmwplkpd2NfBoMlhIwXAmAC2rl5Se&&pov=fronthero&width=950&height=490&bkgnd=&resp=jpg&x=1800&y=2900&w=6000&h=4030&width=500" alt="Ram 3500">
+        
+            <h2>4. Toyota Corolla</h2>
+            <p>Maintained its leadership for 4 consecutive years.The car has the optimal balance of price and quality, is convenient for everyday use, has excellent technical characteristics, and, of course, is reliable. It's no wonder that in 2022, 629 thousand units were sold.</p>
+            <img src="https://di-enrollment-api.s3.amazonaws.com/toyota/models/2024/corolla/Trims/LE_Corolla.png" alt = "Toyota">
+        
+            <h2>5. Tesla Model Y</h2>
+            <p>One of the fastest-charging electric cars, good traction and stability, more affordable than X and S</p>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/tesla-model-y-with-powerline-royalty-free-image-1673730340.jpg?crop=1.00xw:0.746xh;0,0.254xh&resize=980:*" alt="Tesla">
+        </div>
+
+        
+        <div class="section">
+            <h1>Top 5 Best Looking Luxury/Sports Cars</h1>
+            <h2>1. Corvette Stingray</h2>
+            <img src="https://image.cnbcfm.com/api/v1/image/106024378-1563382023200my20-corvette_z51_9287_topon.jpg?v=1563382077&w=750&h=422&vtcrop=y" alt="Corvette Stingray">
+
+            <h2>2. Aston Martin Vanquish</h2>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/2025-aston-martin-vanquish-136-67168a80b769c.jpg?crop=0.605xw:0.510xh;0.0195xw,0.476xh&resize=700:*" alt="Aston Martin Vanquish">
+
+            <h2>3. McLaren Artura</h2>
+            <img src="https://mclaren.scene7.com/is/image/mclaren/03?wid=1728&hei=973" alt="McLaren Artura">
+
+            <h2>4. Bentley Continental GT</h2>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/2024-bentley-continental-gt-convertible-101-644bd404dcb7e.jpg?crop=0.752xw:0.635xh;0.216xw,0.276xh&resize=700:*" alt="Bentley Continental GT">
+
+            <h2>5. Lamborghini Aventador</h2>
+            <img src="https://cdn.motor1.com/images/mgl/OozxwY/s1/2024-lamborghini-aventador-successor-rendering.webp" alt="Lamborghini Aventador">
+    </div> 
+</div>
+    <center><iframe width="100%" height="300" src="https://www.youtube.com/embed/g0JmEJ9Wy40" title="The Most FAMOUS CAR BRANDS AND MODELS!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+</body>
 </html>
+

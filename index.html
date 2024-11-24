@@ -7,30 +7,43 @@
         <link rel="stylesheet" href="css/style.css">
         <title>Cars</title>
         <style>
+            
             body {
-
-            font-family:Arial, Helvetica, sans-serif
+            font-family:Arial, Helvetica, sans-serif;
+            background-image: url('https://m.media-amazon.com/images/I/71jGTW9f42S._UF1000,1000_QL80_.jpg'); 
+            background-size: cover;  
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
             }
-            h2 {
+
+            body::before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+                z-index: -1; 
+            }
+            h1, h2, h4 {
+                text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Adds depth for readability */
+                font-weight: bold;
+                color: white;  
+            }
+            footer{
                 color:white
             }
-h4{
-    
-    font-weight: bold;
-    color: white; /* Ensure the text is white or another contrasting color */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Adds stronger shadow */
-}
-             body {
-        background-image: url('https://m.media-amazon.com/images/I/71jGTW9f42S._UF1000,1000_QL80_.jpg'); 
-        background-size: cover;  
-        background-position: center; 
-        background-repeat: no-repeat; 
-        background-attachment: fixed;
+             
         
-
+            
 
         nav ul {
-    list-style-type: none;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); 
+    list-style-type:none;
     display: flex;
     gap: 20px;
     background-color: rgb(0, 255, 242);
@@ -44,22 +57,22 @@ h4{
         <header>
             <nav>
                 <ul>
-                    <tr>
                     <li><a href="Cars.html">Types of Cars</a></li>
                     <li><a href="Factors.html">Factors</a></li>
                     <li><a href="Costs.html">Costs</a></li>
-                    </tr>
                 </ul>
             </nav>
-            <h1>Home</h1>
+            
     
         </header>
 
         <main>
+            <h1>Home</h1>
             <h2>About my website</h2>
             <h4>In this website, you'll learn about different cars, what to think about when buying one, and the costs.</h4>
         </main>
-
-        <footer>Credits: Cars.com</footer>
-    </body>
-</html>
+        <footer>
+            Credits:Cars
+            </footer>
+        </body>
+            </html>

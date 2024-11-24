@@ -1,20 +1,117 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <style>
-            h1 {
-                color:goldenrod
-            }
-        </style>
-       <header>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        h1, h2, p {
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        nav ul {
+            font-weight: bold;
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            background-color: rgb(0, 255, 242);
+            padding: 10px;
+        }
+
+        h1 {
+            color: goldenrod;
+        }
+
+        /* Side-by-side layout styles */
+        .comparison-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .comparison-section > div {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .comparison-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Cars.html">Types of Cars</a></li>
+                <li><a href="Factors.html">Factors</a></li>
+            </ul>
+        </nav>
         <h1>Costs</h1>
     </header>
-        <main>
-        <p>This is the biggest factor when getting a car and everyone has there own budget for the car. Some cars in the list will be much to expensive for a middle class person to get.</p>
-        </main>
+    <main>
+        <p>This is the biggest factor when getting a car, and everyone has their own budget for the car. A not-as-expensive car such as a Toyota Corolla will get the job done but won't look as nice, be as comfortable, or drive as well as a more expensive car. If you are getting your first car, you typically start with a non-expensive car and get a more expensive one later in your life when you can afford it. All of the cars in my list of the best-looking cars were expensive, showing that a good-looking car will almost always be expensive.</p>
+        
+        <!-- Side-by-side comparison section -->
+        <div class="comparison-section">
+            <div>
+                <h2>Not Expensive Car</h2>
+                <ul>
+                    <li>Won't look as nice</li>
+                    <li>Won't drive as well</li>
+                    <li>Less comfortable</li>
+                    <li>More likely to break</li>
+                </ul>
+                <img src="https://platform.cstatic-images.com/medium/in/v2/stock_photos/497ec0c8-bc0a-4a9e-874d-045553f17bc0/a48f4f87-7615-4dd3-9c6f-6fb9624af3ac.png" alt="Kia Forte">
+            </div>
+            <div>
+                <h2>Expensive Car</h2>
+                <ul>
+                    <li>Looks better</li>
+                    <li>Drives better</li>
+                    <li>More comfortable</li>
+                    <li>More reliable</li>
+                </ul>
+                <img src="https://static.wikia.nocookie.net/forzamotorsport/images/3/3a/FH5_Lamborghini_Aventador_LP_780-4_Ultimae.png/revision/latest?cb=20240718141102p" alt="Lamborghini">
+            </div>
+        </div>
+    </main>
 </body>
 </html>
